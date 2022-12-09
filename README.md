@@ -1,2 +1,2 @@
-:man: <h1 align="center"> Somatico--Trabalho Bioinformatica- </h1> :computer:
+ <h1 align="center"> :man: Somatico--Trabalho Bioinformatica- :computer: </h1> 
 
