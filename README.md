@@ -101,4 +101,15 @@ Com o ambiente de trabalho preparado e o VEP instalado, realizar a anotação da
   
  Para interpretar os caminhos e nomes necessários para preencher corretamente o comando acima obervar:
  
- 
+-Em ```-i```  o ```caminho_documento_vcf``` se refere ao caminho do diretório onde o arquivo vcf a ser analisado está localizado e ```nome_documento_vcf``` se refere ao nome do documento VCF que será analisado.
+
+-Em ```-o``` o ```nome_desejado``` se refere ao nome que deseja utilizar no output do arquivo filtrado gerado pelo VEP.
+
+-Em ```--dir_cache``` o ```'caminho_dir_cashe'``` se refere ao caminho do diretório cashe.
+
+-Em ```--fasta``` o ```caminho_documento_fasta``` é o caminho para o diretório onde está localizado o documento fasta.
+
+-As opções ```--cache```, ```--fields``` e ```--individual```  deve-se preencher de acordo com o que deseja gerar no output e a documentação para fazer a melhor escolha possível para cada caso pode ser encontrada no site:
+https://www.ensembl.org/info/docs/tools/vep/script/vep_filter.html
+
+
