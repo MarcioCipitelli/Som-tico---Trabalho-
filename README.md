@@ -43,4 +43,12 @@ pwd
 
 ```
 
+4- Instalar algumas módulos que serão utilizados mais adiante:
 
+```
+import pandas as pd
+import csv
+
+```
+
+d
