@@ -51,4 +51,25 @@ import csv
 
 ```
 
-d
+Ambiente de trabalho está preparado para a utilização do programa VEP.
+
+
+ <h1 align="center">Utilizando o VEP </h1> 
+
+
+Criado o ambiente de trabalho, utilizar o comando abaixo para instalar o VEP. Em ordem, cada linha do comando pode ser interpretada da seguinte forma:
+
+1- Instalação dos pacotes necessários para utilizar o VEP;
+2- Fazer download do VEP na versão esembl-vep 105.0;
+3- Descompactar o documento baixado.
+
+As duas últimas linhas indicam ao colab para entrar no diretório do VEP onde foi descompactado e realizar a instalação:
+```
+%%bash
+sudo apt install unzip curl git libmodule-build-perl libdbi-perl libdbd-mysql-perl build-essential zlib1g-dev
+wget -c https://github.com/Ensembl/ensembl-vep/archive/refs/tags/105.0.tar.gz
+tar -zxvf 105.0.tar.gz
+cd ensembl-vep-105.0
+./INSTALL.pl --NO_UPDATE 
+
+```
