@@ -125,7 +125,9 @@ df
 
 Exemplo da tabela:
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+
+| index | #Uploaded_variation | Location | Allele | Existing_variation | HGVSc | HGVSp | SYMBOL | Consequence | IND | ZYG | Amino_acids | CLIN_SIG | PolyPhen | SIFT | VARIANT_CLASS | FREQS |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|0 | 1_874643_C/A | 1:874643 | A | - | NM_001385640.1:c.1058-9C>A | - | SAMD11 | splice_polypyrimidine_tract_variant,intron_variant | WP312 | HET | - | - | - | - | SNV | - |
+1 | 1_874647_C/A | 1:874647 | A | rs1336064632 | NM_001385640.1:c.1058-5C>A | - | SAMD11 | splice_polypyrimidine_tract_variant,splice_region_variant,intron_variant | WP312 | HET | - | - | - | - |SNV | - |
+2 | 1_880620_A/C | 1:880620 | C | rs1569931554 | NM_015658.4:c.2054-94T>G | - | NOC2L | intron_variant | WP312 | HET | - | - | - | - | SNV | - |
