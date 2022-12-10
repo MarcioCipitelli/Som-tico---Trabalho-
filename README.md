@@ -112,4 +112,14 @@ Com o ambiente de trabalho preparado e o VEP instalado, realizar a anotação da
 -As opções ```--cache```, ```--fields``` e ```--individual```  deve-se preencher de acordo com o que deseja gerar no output e a documentação para fazer a melhor escolha possível para cada caso pode ser encontrada no site:
 https://www.ensembl.org/info/docs/tools/vep/script/vep_filter.html
 
+Depois, visualizar o arquivo gerado pelo VEP através de uma tabela gerada pelo pandas:
+
+1- Em ```caminho_para_vcf_tsv``` indica o caminho do diretório para o arquivo ```vcf.tsv```;
+
+2- Em ```nome_arquivo_vcf_tsv``` se refere ao nome do arquivo ```vcf.tsv``` que foi gerado.
+```
+tabela = pd.read_csv('/caminho_para_vcf_tsv/nome_arquivo_vcf_tsv.filtered.vcf.tsv', sep='\t', skiprows=38)
+df = pd.DataFrame(tabela)
+df
+```
 
