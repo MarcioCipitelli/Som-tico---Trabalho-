@@ -12,3 +12,6 @@ O processo inicial para utilização do VEP :
 2- Instalar o VEP;
 
 3- Fazer a anotação das variantes.
+
+
+ <h1 align="center">Preparação do ambiente de trabalho </h1> 
