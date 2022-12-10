@@ -29,8 +29,12 @@ drive.mount('/content/drive')
 ```
 2- Montar um diretório específico para os documentos gerados. Utilizar o ```%%bash``` para indicar ao Colab que este código está em bash e utilizar o ```%cd```para fixar esse diretório como o diretório principal:
 
-```%%bash
+```
+%%bash
 mkdir vepsomatico
-%cd somatico```
+%cd somatico
+
+```
+
 
 
