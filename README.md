@@ -36,5 +36,11 @@ mkdir vepsomatico
 
 ```
 
+3- Confirmar o diretório que será utilizado:
+```
+%%bash
+pwd
+
+```
 
 
