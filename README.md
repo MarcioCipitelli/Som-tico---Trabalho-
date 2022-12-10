@@ -60,7 +60,9 @@ Ambiente de trabalho está preparado para a utilização do programa VEP.
 Criado o ambiente de trabalho, utilizar o comando abaixo para instalar o VEP. Em ordem, cada linha do comando pode ser interpretada da seguinte forma:
 
 1- Instalação dos pacotes necessários para utilizar o VEP;
+
 2- Fazer download do VEP na versão esembl-vep 105.0;
+
 3- Descompactar o documento baixado.
 
 As duas últimas linhas indicam ao colab para entrar no diretório do VEP onde foi descompactado e realizar a instalação:
@@ -73,3 +75,30 @@ cd ensembl-vep-105.0
 ./INSTALL.pl --NO_UPDATE 
 
 ```
+ Após, utilizar o código abaixo para verificar a instalação:
+ ```
+ %%bash
+cd ensembl-vep-105.0
+./vep
+
+```
+
+Com o ambiente de trabalho preparado e o VEP instalado, realizar a anotação das variantes:
+```
+%%bash
+/ensembl-vep-105.0/vep  \
+  --fork 4 \
+  -i /caminho_documento_vcf/nome_documento_vcf.vcf.gz \
+  -o nome_desejado.filtered.vcf.tsv \
+  --dir_cache /caminho_dir_cashe/ \
+  --fasta /caminho_documento_fasta/nome_documento_fasta.fasta \
+  --cache --offline --assembly GRCh37 --refseq  \
+	--pick --pick_allele --force_overwrite --tab --symbol --check_existing --variant_class --everything --filter_common \
+  --fields "Uploaded_variation,Location,Allele,Existing_variation,HGVSc,HGVSp,SYMBOL,Consequence,IND,ZYG,Amino_acids,CLIN_SIG,PolyPhen,SIFT,VARIANT_CLASS,FREQS" \
+  --individual all
+  
+  ```
+  
+ Para interpretar os caminhos e nomes necessários para preencher corretamente o comando acima obervar:
+ 
+ 
